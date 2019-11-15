@@ -1,5 +1,5 @@
 # Coursera_Capstone
-This repository is for the final Capstone project of my IBM Data Science Professional Certification. IBM Watson Studio was used for 
+This repository is for the final Capstone project of my IBM Data Science Professional Certification. IBM Watson Studio was used.
 
 Scope:
 
