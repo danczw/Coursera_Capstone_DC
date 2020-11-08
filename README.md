@@ -1,5 +1,4 @@
-## Capstone Project
-## - IBM Data Science Professional Certification
+## Capstone Project - IBM Data Science Professional Certification
 This repository is for the final Capstone project of my IBM Data Science Professional Certification. IBM Watson Studio was used.
 
 #### Scope:
