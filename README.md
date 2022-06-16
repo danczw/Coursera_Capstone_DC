@@ -1,6 +1,6 @@
-# Neighborhood likelihood - k-means clustering
+# Suburbs likelihood - k-means clustering
 
-**A brief comparison of neighborhoods in Hamburg and Berlin using k-means clustering - based on their venue infrastructure.**
+**A brief comparison of suburbs in Hamburg and Berlin using k-means clustering - based on their venue infrastructure.**
 
 This repository is for the final Capstone project of my IBM Data Science Professional Certification. IBM Watson Studio was used.
 
@@ -21,11 +21,11 @@ Both cities beeing in the northern part of Germany, there is a great exchange be
 
 This could be helpful for different use case (and different stakeholders):
 
-* **People moving from one city to the other** often would like to live in a very specific type of neighborhood. This comparison can help those to filter for areas similar (or even different, if you are up for something new) to what you are used to.
-* **Companies expanding within one of the cities** might want to look for similar type of neighborhoods, as they are targeting a specific user group. The comparison can be used for a first indication.
-* **Companies expanding from one city to the other** might also try to find a neighborhood to settle in first. They can use their experience from the original city and look for a fitting (e.g. similar) neighborhood in the second one.
+* **People moving from one city to the other** often would like to live in a very specific type of suburbs. This comparison can help those to filter for areas similar (or even different, if you are up for something new) to what you are used to.
+* **Companies expanding within one of the cities** might want to look for similar type of suburbs, as they are targeting a specific user group. The comparison can be used for a first indication.
+* **Companies expanding from one city to the other** might also try to find a suburbs to settle in first. They can use their experience from the original city and look for a fitting (e.g. similar) neighborhood in the second one.
 
-The comparison will be based on the structure of venues within both cities and their neighborhoods. For example, imagine you are living in a rather hip Berlin area with many smaller restaurants, open parks for recreation and some secluded bars in between. Now moving to Hamburg you are looking for that same feeling and therefore wonder which neighborhoods may be fitting. The venue structure within smaller areas will give a first indication of what the neighborhood atmosphere is like.
+The comparison will be based on the structure of venues within both cities and their suburbs. For example, imagine you are living in a rather hip Berlin area with many smaller restaurants, open parks for recreation and some secluded bars in between. Now moving to Hamburg you are looking for that same feeling and therefore wonder which neighborhoods may be fitting. The venue structure within smaller areas will give a first indication of what the neighborhood atmosphere is like.
 
 <br>
 
@@ -34,6 +34,6 @@ Data
 
 Two different kind of data is needed for the comparison.
 
-1. **City neighborhood and respective geographical data:** in order to analyse the cities on a meaningfull level, they need to be divided into differen areas, e.g. neighborhoods, boroughs. Luckily both is available as a Github repro and can be found [here](https://github.com/zauberware/postal-codes-json-xml-csv). This data includes 11 rows, of which only state (i.e. Berlin or Hamburg), ZIP-code (10 for Berlin, 22 for Hamburg), latitude and longitude per ZIP-code will be needed. ZIP-codes will be used for dividing both cities into smaller areas. ZIP-code is chosen as it is an unique identifier. In the following this data is cleaned and filtered to what is needed.
+1. **City suburbs and respective geographical data:** in order to analyse the cities on a meaningfull level, they need to be divided into differen areas, e.g. neighborhoods, boroughs. Luckily both is available as a Github repro and can be found [here](https://github.com/zauberware/postal-codes-json-xml-csv). This data includes 11 rows, of which only state (i.e. Berlin or Hamburg), ZIP-code (10 for Berlin, 22 for Hamburg), latitude and longitude per ZIP-code will be needed. ZIP-codes will be used for dividing both cities into smaller areas. ZIP-code is chosen as it is an unique identifier. In the following this data is cleaned and filtered to what is needed.
 
 2. **Venue and respective geographical data:** The first 100 venues per ZIP-code in both Hamburg and Berlin are scraped in order to cluster the different areas. This data, including the Venue name, its category, latitude and longitude, is gathered using the Foursquare API. 
